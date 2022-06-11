@@ -39,4 +39,4 @@ jobs:
           app-name: 'privateendpointtester'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A7959057352E48B28123C6962697B8DA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_01A1F137AC0B4479873D66656AC8C8A2 }}

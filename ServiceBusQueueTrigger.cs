@@ -11,6 +11,7 @@ namespace Company.Function
         public static void Run([ServiceBusTrigger("queue", Connection = "SERVICEBUS_CONNECTION")]string myQueueItem, ILogger log)
         {
             log.LogInformation($"C# ServiceBus queue trigger function processed message: {myQueueItem}");
+            log.LogError(myQueueItem);
         }
     }
 }
